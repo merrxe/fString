@@ -1,0 +1,88 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x74E4B907 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000048 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x00662F5C (32-bit), Flags: Cmdre0, Thread: 0x31C8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x74E4B907 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x74E44FCB in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042D986 in C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe: main() at C:/Users/NOTE-NOTE/Desktop/инфа/fString/bMain.cpp:10:
+
+      8: 
+      9:     char h[20] = "Hello ";
+=>   10:     printf("\"Hello\" + \"World\" = %s", *bStrcat(h, "World"));
+     11:     return 0;
+     12:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\NOTE-NOTE\Desktop\летка\TX\TXLib.h
+Compiled:	Sep 10 2025 18:28:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 10 2025 18:33:57
+
+Run file:	C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe
+Directory:	C:\Users\NOTE-NOTE\Desktop\инфа\fString
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x74E4B907 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000048 в модуле C:\Windows\System32\msvcrt.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400], Instance: 0x00662F5C (32-bit), Flags: Cmdre0, Thread: 0x31C8 (Main), GetLastError(): 126 (Не найден указанный модуль). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x74E4B907 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x74E44FCB in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042D986 in C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe: main() at C:/Users/NOTE-NOTE/Desktop/инфа/fString/bMain.cpp:10:
+
+      8: 
+      9:     char h[20] = "Hello ";
+=>   10:     printf("\"Hello\" + \"World\" = %s", *bStrcat(h, "World"));
+     11:     return 0;
+     12:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 174, Date: 2025-08-17 06:00:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\NOTE-NOTE\Desktop\летка\TX\TXLib.h
+Compiled:	Sep 10 2025 18:28:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 10 2025 18:33:57
+
+Run file:	C:\Users\NOTE-NOTE\Desktop\инфа\fString\start.exe
+Directory:	C:\Users\NOTE-NOTE\Desktop\инфа\fString
+
+--------------------------------------------------
